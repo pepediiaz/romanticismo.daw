@@ -1,0 +1,44 @@
+/*************************************************************************************************/
+/*  Web del Romanticismo                                                                         */
+/*  CSS de la Canción del Pirata de Espronceda                                                                    */
+/*  Autor: Francisco Cedillo Serrato                                                             */
+/*  Versión 1.0                                                                                  */
+/*************************************************************************************************/
+
+/*****************   ESTILO GENERAL **************************************************************/
+
+@font-face {
+    font-family: escritura;
+    src: url(../fonts/Tangerine-Bold.ttf);
+}
+
+body {font-family: escritura;
+      font-size: 2em;
+      background-image: url(../images/Pirate-Background.jpg);
+      background-color: #000; /*donde la imágen no llega, aparece el color */
+      background-repeat: no-repeat;
+      background-size: cover;} /*para que cubra la página entera*/
+
+#wrapper {
+           background-color: #c5a0754b;
+           border-radius:0 40px 0 40px;
+           /*opacity: 0.8;  transparenta todo y pierde contraste*/
+           width: 30%;
+           text-align: center;
+           margin-left: 50%; /*la medida de % es SIEMPRE RELATIVA AL ANCHO*/
+           margin-top: 20vh; /*la medida vh hace que tomes el alto como valor de referencia*/
+           padding: 20px 0;
+        }
+
+/*****************   MEDIA QUERIES **************************************************************/
+/* tamaño tablet */
+@media only screen and (width<=900px){/*todas las excepciones para móvil*/
+    #wrapper {width: 50%;
+              margin-left: 30%;} /* se aprovecha más el ancho*/
+}
+/* tamaño móvil */
+@media only screen and (width<=600px){/*todas las excepciones para móvil*/
+    #wrapper {width: 70%;
+              margin-left: 15%;
+              background-color: #c5a075bf;} /*se aprovecha todo el ancho*/
+}
